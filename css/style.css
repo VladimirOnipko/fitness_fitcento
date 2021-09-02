@@ -1,0 +1,713 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.header__container {
+    padding-top: 5px;
+}
+
+
+.header__item {
+    display: flex;
+}
+
+.header {
+    background: darkblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__list + .header__list {
+    margin-left: 50px;
+}
+
+.header__menu-link {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__menu-link:hover {
+    background: palegoldenrod;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.8s;
+}
+
+.header__search-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__item {
+    margin-left: 70px;
+}
+
+.header__text {
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    background-color: rgba(156, 156, 156, 0.61);
+    background-repeat: no-repeat;
+    width: 100%;
+    border-radius: 7px;
+    padding: 0 10px;
+}
+
+.text__top {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.header__text-color {
+    color: rgba(0, 4, 255, 0.671);
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.header__top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.contact__btn {
+    background: rgb(2, 2, 121);
+    color: #fff;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.content__btn {
+    padding-top: 80px;
+}
+
+.header__top-content {
+    background-image: url(../images/banner-bg.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.left__arrow {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    background: #4682B4;
+    padding: 18px;
+    transition: all .5s;
+    border-radius: 50%;
+}
+
+.left__arrow:hover {
+    color: #4682B4;
+    background: #fff;
+    border-radius: 50% #4682B4;
+}
+
+.right__arrow {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    background: #4682B4;
+    padding: 18px;
+    transition: all .5s;
+    border-radius: 50%;
+}
+
+.right__arrow:hover {
+    color: #4682B4;
+    background: #fff;
+    border-radius: 50% #4682B4;
+}
+
+.arrow {
+    position: absolute;
+    bottom: -60px;
+    left: 10px;
+    cursor: pointer;
+
+}
+
+.about__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px 0;
+}
+
+.about__title {
+    font-size: 30px;
+    border-bottom: 1px solid skyblue;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.about__text {
+    padding-top: 30px;
+}
+
+.about__gym {
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.about__gym-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 60px;
+    color: #fff;
+}
+
+.about__gym-content {
+    display: flex;
+    white-space: pre-line;
+    line-height: 25px;
+}
+
+.about__img {
+    width: 420px;
+}
+
+.about__border {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background: black;
+}
+
+.about__gym-btn {
+    margin-top: 80px;
+}
+
+.see__more-btn {
+    background: rgba(255, 196, 0, 0.897);
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 750;
+    cursor: pointer;
+}
+
+.classes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 10px 35px;
+}
+
+.classes__title {
+    text-transform: uppercase;
+    border-bottom: 1px solid skyblue;
+    font-size: 30px;
+}
+
+.classes__text {
+    padding: 20px 5px 0;
+}
+
+.classes__img {
+    width: 90%;
+}
+
+.classes__blok-top {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.classes__title-top {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 5px 0;
+}
+
+.classes__btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.classes__link-btn {
+    background: darkblue;
+    width: 120px;
+    height: 35px;
+    color: #fff;
+    font-weight: 550;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.partner__content-section {
+    display: flex;
+    background-image: url(../images/img-4.png);
+    background-size: cover;
+    background-position: center;
+    height: 65vh;
+    margin-top: 40px;
+}
+
+.container__partner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.partner__content{
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+    color: #fff;
+}
+
+.partner__title {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.partner__text {
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.partner__btn-link {
+    height: 35px;
+    background: orange;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.content__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 0;
+}
+
+.our__price {
+    white-space: pre-line;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    border-bottom: 1px solid skyblue;
+}
+
+.border__price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.border__content {
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+    text-align: center;
+    background: rgb(98, 0, 255);
+    height: 45vh;
+    width: 225px;
+    line-height: 22px;
+    border-radius: 7px;
+    padding: 0px 20px;
+    }
+
+.price__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price__title {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.price__text {
+    margin-top: 20px;
+}
+
+.price__dollars {
+    font-size: 30px;
+}
+
+.color {
+    color: rgb(255, 187, 60);
+}
+
+.price__btn-link {
+    width: 125px;
+    height: 32px;
+    color: #fff;
+    background: darkblue;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.price__btn-link:hover {
+    background: rgb(213, 236, 2);
+    color: black;
+    transition: 0.8s;
+}
+
+.price__btn {
+    padding-top: 35px;
+}
+
+.flex__price {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 10px 0;
+}
+
+.contact__us-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 65px 10px 0;
+}
+
+.contact__title {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 1px solid skyblue;
+}
+
+.contact__text {
+    padding-top: 20px;
+}
+
+form {
+    background-image: url(../images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    max-width: 540px;
+    padding-right: 16px;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+  input {
+    width: 100%;
+    margin: 10px 0;
+    outline: none;
+    margin: 20px 0;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+
+  .name,
+  .email,
+  .phone,
+  .message {
+    background-color: #03174c00;
+    color: #fff;
+  }
+
+.form-header {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.but-send {
+    max-width: 150px;
+    height: 30px;
+    background: rgb(0, 0, 73);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__text {
+    color: #fff;
+    white-space: pre-line;
+    padding: 0 15px;
+}
+
+.footer__map,
+.footer__phone,
+.footer__email {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgb(1, 1, 78);
+    height: 50vh;
+    padding: 0 10px 0;
+}
+
+.footer__icon {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer__bottom {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.footer__bottom-text {
+    text-align: center;
+}
+
+@media (max-width:1220px) {
+    .logo {
+        width: calc(140px + (176 - 140) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .text__top {
+        font-size: calc(22px + (35 - 22) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .header__text-color {
+        font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .about__gym {
+        font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .about__gym-content {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .about__gym-text {
+        width: calc(370px + (400 - 370) * ((100vw - 320px) / (1200 - 320)));
+        padding-left: calc(20px + (60 - 20) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .about__img {
+        width: calc(250px + (420 - 250) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .partner__title {
+        font-size: calc(30px + (50 - 30) * ((100vw - 320px) / (1200 - 320)));
+    }
+    .partner__text {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+    }
+}
+
+@media (max-width:840px) {
+    .header__nav {
+        position: relative;
+    }
+    .menu__burger {
+        display: block;
+        width: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 0px;
+        top: -25px;
+    }
+    .menu__burger span {
+        display: block;
+        margin-bottom: 10px;
+        background-color: #fff;
+        height: 4px;
+    }
+    .header__item {
+        display: none;
+        padding-top: 20px;
+        text-align: end;
+        line-height: 30px;
+    }
+    .header__menu-link {
+        transition: all 0s;
+    }
+    .header__menu-link:hover {
+        background: palegoldenrod;
+        color: black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .search__item, .menu__item  {
+        display: none;
+    }
+    .header__container {
+        height: 50px;
+    }
+    .header__top {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    .about__border {
+        display: flex;
+        margin-top: 50px;
+        background: black;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .header__top-content {
+        display: flex;
+        justify-content: flex-end;
+        height: 70vh;
+    }
+    .header__text {
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        background-color: rgba(156, 156, 156, 0.61);
+        padding: 0 10px;
+    }
+    .text__top {
+        padding: 10px 0;
+    }
+    .header__text-color {
+        padding: 7px 0;
+    }
+    .about__text, .classes__text, .price__text, .contact__text {
+        text-align: center;
+    }
+}
+
+@media (max-width:760px) {
+    .header__text {
+        line-height: 18px;
+    }
+    .about__border {
+        display: flex;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__gym-images {
+        order: -1;
+    }
+    .about__gym-content {
+        display: flex;
+        line-height: 25px;
+        padding-top: 20px;
+        white-space: normal;
+    }
+    .about__gym-btn {
+        margin-top: 20px;
+    }
+    .about__gym-text {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .about__gym {
+        padding-top: 15px;
+    }
+    .border__price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #fff;
+    }
+    .price__top {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .price__btn {
+        padding: 20px 0;
+    }
+    .flex__price {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 50px 10px 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:560px) {
+    .classes__blok-top {
+        display: flex;
+        text-align: center;
+        padding: 0 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .classes__blok-z {
+        width: 175px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .classes__title-top {
+        padding: 5px;
+    }
+    .classes__text {
+        padding: 10px;
+    }
+    .container__partner {
+        padding-left: 10px;
+        text-align: center;
+    }
+
+}
